@@ -5,6 +5,13 @@ package PizzaOrder;
 public class Main {
     public static void main(String[] args) {
 
+        /*
+        Live tested by Robert Skaar 02-10-2019
+        errors:
+        choosing amount of toppings - inputting letters will skip all topping choises
+        choosing the topping - inputting letters will kill the program with index out of bounds
+        else, good job (y)
+         */
         Pizza Pizza1 = new Pizza();
 
         choosePizza(Pizza1);
