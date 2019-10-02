@@ -65,8 +65,8 @@ public class Main {
         final int NUMBER_OF_AVAILABLE_TOPPINGS = 10;
         int numOfToppingsWanted = 0;
         int chosenToppingNumber = 0;
-        String[] chosenToppingNames = {"","","","","","","","","",""};
-        double[] chosenToppingPrices = {0,0,0,0,0,0,0,0,0,0};
+        String[] chosenToppingNames = new String[10];
+        double[] chosenToppingPrices = new double[10];
         double totalToppingPrice = 0;
 
         System.out.println("Topping Menu\n");
