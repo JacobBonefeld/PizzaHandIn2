@@ -10,6 +10,10 @@ public class Main {
         errors:
         choosing amount of toppings - inputting letters will skip all topping choises
         choosing the topping - inputting letters will kill the program with index out of bounds
+
+        complications:
+        error message dont guide a user towards a valid input
+        
         else, good job (y)
          */
         Pizza Pizza1 = new Pizza();
