@@ -1,5 +1,5 @@
 package PizzaOrder;
-        import java.lang.reflect.Array;  //Used to get
+        import java.lang.reflect.Array;
         import java.util.Scanner;
 
 public class Main {
@@ -15,6 +15,10 @@ public class Main {
         error message dont guide a user towards a valid input
         
         else, good job (y)
+         */
+
+        /* Corrections after Robert test
+           - Wrong lower limit in input validations from chooseTopping caused the mistake. *FIXED*
          */
         Pizza Pizza1 = new Pizza();
 
@@ -87,13 +91,13 @@ public class Main {
         }
 
         System.out.println("\nHow many toppings do you want? (Max 10)");
-        numOfToppingsWanted = inputValidator(0,10);
+        numOfToppingsWanted = inputValidator(1,10);
 
         System.out.println("Enter wanted topping number: ");
 
         for (int i = 0; i < numOfToppingsWanted ; i++) { //Getting all toppings from user
             System.out.printf("Topping %d: ",i+1);
-            chosenToppingNumber = inputValidator(0,NUMBER_OF_AVAILABLE_TOPPINGS);
+            chosenToppingNumber = inputValidator(1,NUMBER_OF_AVAILABLE_TOPPINGS);
             chosenToppingNames[i] = toppingNames[chosenToppingNumber-1];
             chosenToppingPrices[i] = toppingPrices[chosenToppingNumber-1];
             totalToppingPrice += toppingPrices[chosenToppingNumber-1];
